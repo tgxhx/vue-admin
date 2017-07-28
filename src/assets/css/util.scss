@@ -1,0 +1,16 @@
+@mixin ell() {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+$baseColor: #324157;
+$baseColor2: #bfcbd9;
+$baseColor3: #20a0ff;
+
+@mixin bgc() {
+  padding:20px;
+  background-color: #fff;
+  box-shadow:0px 0px 6px #ccc;
+}
