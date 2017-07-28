@@ -16,39 +16,30 @@
             <span slot="title">导航一</span>
           </template>
           <el-menu-item index="1-1">
-            <router-link to="/page1">form1</router-link>
+            <router-link to="/page1">Form</router-link>
           </el-menu-item>
           <el-menu-item index="1-2">
-            <router-link to="/page1/page11">form2</router-link>
+            <router-link to="/page1/page11">Form2</router-link>
           </el-menu-item>
           <el-submenu index="1-4">
-            <template slot="title">选项4</template>
+            <template slot="title">二级导航</template>
             <el-menu-item index="1-4-1">
-              <router-link to="/page2/page22">page22</router-link>
+              <router-link to="/page2/page22">Chart</router-link>
             </el-menu-item>
           </el-submenu>
         </el-submenu>
         <el-submenu index="2">
           <template slot="title"><i class="el-icon-menu"></i><span slot="title">导航二</span></template>
           <el-menu-item index="2-1">
-            <router-link to="/page2">table</router-link>
+            <router-link to="/page2">Table</router-link>
           </el-menu-item>
           <el-menu-item index="2-2">
-            <router-link to="/page2/page22">page22</router-link>
+            <router-link to="/page2/page22">Chart</router-link>
           </el-menu-item>
-          <el-menu-item index="2-3">
-            <router-link to="/page3">page3</router-link>
-          </el-menu-item>
-          <el-submenu index="2-4">
-            <template slot="title">选项4</template>
-            <el-menu-item index="2-4-1">
-              <router-link to="/page3/page33">page33</router-link>
-            </el-menu-item>
-          </el-submenu>
         </el-submenu>
         <el-menu-item index="3">
           <i class="el-icon-setting"></i><span slot="title">
-            <router-link to="/page3">page3</router-link>
+            <router-link to="/page3">导航三</router-link>
           </span>
         </el-menu-item>
       </el-menu>
@@ -99,7 +90,7 @@
     background-color: $baseColor;
     > a {
       display: inline-block;
-      margin-left: 15px;
+      margin-left: 20px;
     }
     .el-radio-group {
       position: absolute;

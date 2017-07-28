@@ -7,12 +7,11 @@
         <el-table-column
           label="#"
           prop="id"
-          width="180">
+          width="70">
         </el-table-column>
         <el-table-column
           prop="name"
-          label="姓名"
-          width="180">
+          label="姓名">
         </el-table-column>
         <el-table-column
           prop="age"
@@ -122,6 +121,9 @@
         margin-top:30px;
         display: flex;
         justify-content: flex-end;
+      }
+      .el-table__body-wrapper {
+        overflow: inherit;
       }
     }
     .el-table__body {

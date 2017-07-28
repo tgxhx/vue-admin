@@ -20,7 +20,12 @@
 <script type="text/ecmascript-6">
   import axios from 'axios'
   import {mapState} from 'vuex'
-  import echars from 'echarts'
+  const echarts = require('echarts/lib/echarts')
+  require('echarts/lib/chart/line');
+  require('echarts/lib/chart/bar');
+  require('echarts/lib/chart/pie');
+  require('echarts/lib/component/tooltip');
+  require('echarts/lib/component/axisPointer');
 
   const changeSize = () => {
     let chartWraps = document.querySelectorAll('.charts .el-col')
@@ -41,7 +46,7 @@
     },
     mounted() {
       changeSize()
-      let myChart = echars.init(document.getElementById('myChart'))
+      let myChart = echarts.init(document.getElementById('myChart'))
       const dataX = [], dataY = []
       let i = 0
       while (i < 12) {
@@ -105,7 +110,7 @@
       }
       myChart.setOption(options1)
 
-      let myChart2 = echars.init(document.getElementById('myChart2'))
+      let myChart2 = echarts.init(document.getElementById('myChart2'))
       const option2 = {
         title: {
           text: '深圳月最低生活费组成（单位:元）',
@@ -169,7 +174,7 @@
       };
       myChart2.setOption(option2)
 
-      let myChart3 = echars.init(document.getElementById('myChart3'))
+      let myChart3 = echarts.init(document.getElementById('myChart3'))
       const option3 = {
         title : {
           text: '某站点用户访问来源',

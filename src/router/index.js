@@ -16,7 +16,6 @@ const router = new Router({
     {
       path: '/',
       name: 'Index',
-      redirect: '/page1',
       meta: {
         requireAuth: true
       },
@@ -62,10 +61,10 @@ const router = new Router({
     }
   ]
 })
-
 router.beforeEach((to, from, next) => {
   let token = !!sessionStorage.getItem('login')
   //拦截未登录进入首页
+  debugger
   if (to.meta.requireAuth) {
     if (token) {
       next()
