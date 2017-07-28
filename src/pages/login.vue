@@ -10,7 +10,7 @@
               <el-input v-model="form.name" placeholder="username"></el-input>
             </el-form-item>
             <el-form-item label="">
-              <el-input v-model="form.password" placeholder="password" type="password"></el-input>
+              <el-input v-model="form.password" placeholder="password" type="password" @keydown.native.enter="login"></el-input>
             </el-form-item>
             <el-form-item label="">
               <el-checkbox v-model="form.checked">Remember me</el-checkbox>

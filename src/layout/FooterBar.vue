@@ -1,6 +1,6 @@
 <template>
     <footer id="footer_bar">
-      <a href="https://github.com/tgxhx" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+      <a href="https://github.com/tgxhx/vue-admin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
     </footer>
 </template>
 

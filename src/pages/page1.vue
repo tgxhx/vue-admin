@@ -125,5 +125,8 @@
 
     .el-row {
       padding:20px 0;
+      .line {
+        text-align: center;
+      }
     }
 </style>
